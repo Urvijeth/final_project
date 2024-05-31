@@ -5,23 +5,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Database Details</title>
     <style>
         table {
             width: 40%;
             border-collapse: collapse;
+            padding-left: 50px;
+          
         }
         th, td {
             padding: 8px;
+
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #2a2828;
         }
         th {
             background-color: #f2f2f2;
         }
+        .table1{
+            padding-left: 30px;
+
+        }
     </style>
 </head>
-<body>
+<body><div class="table1">
     <h2>User Details</h2>
     <table>
         <thead>
@@ -43,6 +51,7 @@
             {% endfor %}
         </tbody>
     </table>
+
 <br>
 
     <h1>donor</h1>
@@ -96,5 +105,8 @@
             {% endfor %}
         </tbody>
     </table>
+<br><br>
+    <button><a href="{{url_for('homepage')}}"class="btn btn-primary">Back To Home</a></button>
+</div>
 </body>
 </html>
